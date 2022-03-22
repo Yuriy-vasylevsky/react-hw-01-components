@@ -15,3 +15,7 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+const ell = React.createElement('div', { g: 3 }, 'Привет');
+console.log('🚀 ~ file: index.js ~ line 20 ~ ell', ell);
+ReactDOM.render(ell, document.querySelector(`#root`));
