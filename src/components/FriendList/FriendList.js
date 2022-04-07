@@ -1,8 +1,9 @@
-import FriendListItem from './FrendListItem';
+import FriendListItem from '../FrendListItem/FrendListItem';
+import s from './FriendList.module.css';
 
 export default function Profile({ friends }) {
   return (
-    <ul class="friend-list">
+    <ul className={`${s.friend} list`}>
       {friends.map(friend => (
         <FriendListItem
           avatar={friend.avatar}
